@@ -1,21 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-  <section>
-    <router-link to="/home">home</router-link>
-    <router-link to="/about">about</router-link>
-  </section>
-  <router-view></router-view>
+  <Web></Web>
 </template>
 
 <script lang="ts">
+import Web from './layout/web.vue'
 import { defineComponent } from 'vue'
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    Web
   }
 })
 </script>
@@ -27,6 +21,8 @@ export default defineComponent({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  padding: 0;
+  min-height: calc(100vh)
 }
 </style>
